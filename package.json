@@ -18,6 +18,7 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
+    "postcss-pxtorem": "^4.0.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -33,6 +34,15 @@
       "parser": "babel-eslint"
     },
     "rules": {}
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-pxtorem": {
+        "rootValue": 16,
+        "propList": ["*"]
+      }
+    }
   },
   "browserslist": [
     "> 1%",
