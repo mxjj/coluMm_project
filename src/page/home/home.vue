@@ -1,5 +1,11 @@
 <template>
-  <div>{{message}}</div>
+  <div class= "mbox">
+    <div class="header">
+      <div class="header_">
+      </div>
+    </div>
+  
+  </div>
 </template>
 <script>
 export default {
