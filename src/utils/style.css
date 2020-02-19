@@ -2,7 +2,7 @@
 
 
 /**
-    字体大小，颜色
+  ，颜色
 */
 
 .col-999 {
@@ -11,20 +11,58 @@
 .col-bbb{
     color: #BBBBBB;
 }
+.col-333 {
+    color: #333333;
+}
 .col-5454 {
     color: #545454;
+}
+.col-F31{
+    color: #FE3F31;
+}
+.col-000{
+    color: #000000;
 }
 
 
 /* 外边距 */
+.mb-14{
+    margin-bottom: 14px;
+}
 .magl_11{
     margin-left:11px ;
 }
 
+/* 内边距 */
+.padd-30{
+    padding: 0 30px;
+}
+
 /* 字体 */
+.fs-18b{
+    font-size: 18px;
+    font-weight: bold;
+}
+.fs-20{
+    font-size:20px;
+}
 .fs-24{
     font-size: 24px;
 }
+.fs-26{
+    font-size: 26px;
+}
 .fs-28 {
     font-size: 28px;
+}
+.fs-28b {
+    font-size: 28px;
+    font-weight: bold;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-36b{
+    font-size: 36px;
+    font-weight: bold;
 }
