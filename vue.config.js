@@ -1,5 +1,6 @@
 
 
+console.log(process.env.VUE_APP_URL)
 module.exports = {
     // eslint保存检查
     lintOnSave: true,
@@ -12,7 +13,7 @@ module.exports = {
         proxy: {
             'api': {
                 // 代理地址
-                target:'http://yapi.demo.qunar.com/',
+                target:process.env.VUE_APP_URL,
                 // 自动打开浏览器
                 changeOrigin:true,
                 // 重写地址
