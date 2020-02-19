@@ -71,6 +71,22 @@
             </div>
           </div>
         </div>
+          <div class="fl_nav_item">
+          <div class="nav_img">
+            <img src />
+          </div>
+          <div class="nav_text">
+            <div class="nav_tit fs-32 col-999">每晚微量天然蚕丝春秋夏被单双...</div>
+            <div class="nav_price_t">
+              <div class="fs-36b col-F31">￥1.00</div>
+            </div>
+            <div class="nav_pri_b">
+              <div class="fs-28b col-000">￥0.99</div>
+              <div class="fs-18b vip_box">VIP</div>
+              <div class="fs-24 col-999">已售888件</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -185,6 +201,7 @@ export default {
     }
   }
   .floor_box {
+    padding-bottom: 80px;
     .fl_title {
       display: flex;
       .fl_i_title {
@@ -212,9 +229,9 @@ export default {
     .floor_nav {
       .fl_nav_item {
         padding: 30px 0;
-        height: 240px;
         box-sizing: border-box;
         display: flex;
+        border-bottom:1px solid #3333;
         justify-content: space-between;
         .nav_img {
           height: 180px;
@@ -235,6 +252,7 @@ export default {
             display: flex;
             align-items: center;
             margin-top: 16px;
+            margin-bottom: 19px;
             .vip_box {
               margin: 0 10px;
               height: 20px;
