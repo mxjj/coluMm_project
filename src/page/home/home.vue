@@ -21,13 +21,20 @@
     <!-- 内容部分 -->
     <div class="content">
       <div class="list_nav">
-        <div class="list_nav_i">
-          <image  src=""></image>
+        <div class="list_item" v-for="(item,index) in icon_list" :key="index">
+          <div class="list_nav_i">
+            <img :src="item.Img" />
           </div>
-          <div class="bot_ text fs-24">商品分类</div>
+          <div class="fs-24 col-5454">{{item.title}}</div>
+        </div>
+      </div>
+      <div class="nav_videos">
+        <div class="vidos_i">
+          
         </div>
       </div>
     </div>
+  </div>
 </template>
 <script>
 import { Icon, Swipe, SwipeItem } from "vant";
@@ -43,6 +50,24 @@ export default {
       images: [
         "https://img.yzcdn.cn/vant/apple-1.jpg",
         "https://img.yzcdn.cn/vant/apple-2.jpg"
+      ],
+      icon_list: [
+        {
+          title: "商品分类",
+          Img: require("../../assets/home_Img/fenlei.png")
+        },
+        {
+          title: "领优惠券",
+          Img: require("../../assets/home_Img/hangye.png")
+        },
+        {
+          title: "行业资讯",
+          Img: require("../../assets/home_Img/shouchang.png")
+        },
+        {
+          title: "我的收藏",
+          Img: require("../../assets/home_Img/shouchang.png")
+        }
       ]
     };
   }
@@ -75,25 +100,34 @@ export default {
       }
     }
   }
-  .content{
+  .content {
     .list_nav {
-      height: 200px;
       display: flex;
-      align-items: center;
       justify-content: space-around;
-      flex-direction: column;
-      border: 1px solid red;
-      .list_nav_i{
-        height: 98px;
-        width: 98px;
-        border: 1px solid red;
-        image{
-          height: 100%;
-          width: 100%;
+      align-items: center;
+      .list_item {
+        display: flex;
+        width: 20%;
+        height: 200px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .list_nav_i {
+          height: 98px;
+          width: 98px;
+          margin-bottom: 20px;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
         }
       }
-      .bot_text {
-      }
+    }
+    .nav_videos {
+     padding: 30px;
+     background-color: #F6F6F6;
+     border: 1px solid red;
     }
   }
 }
