@@ -1,14 +1,17 @@
 
 const index = [
     {
-        path:"/",
-        redirect:"/home"
+        path: "/",
+        redirect: "/home"
     },
     {
         path: "/home",
         name: "home",
         // component: () => import('@/page/home/home')
-        component: resolve => require(['@/page/home/home.vue'], resolve)
+        component: resolve => require(['@/page/home/home.vue'], resolve),
+        meta:{
+            isShow:true
+        }
     }
 ]
 

@@ -71,7 +71,7 @@
             </div>
           </div>
         </div>
-          <div class="fl_nav_item">
+        <div class="fl_nav_item">
           <div class="nav_img">
             <img src />
           </div>
@@ -159,6 +159,8 @@ export default {
         img {
           height: 375px;
           width: 100%;
+          -webkit-filter: blur(3px); /* Chrome, Safari, Opera */
+          filter: blur(3px);
         }
       }
     }
@@ -231,7 +233,7 @@ export default {
         padding: 30px 0;
         box-sizing: border-box;
         display: flex;
-        border-bottom:1px solid #3333;
+        border-bottom: 1px solid #3333;
         justify-content: space-between;
         .nav_img {
           height: 180px;
@@ -245,7 +247,7 @@ export default {
           .nav_tit {
             margin-bottom: 54px;
           }
-          .nav_price_t{
+          .nav_price_t {
             margin-left: -6px;
           }
           .nav_pri_b {
