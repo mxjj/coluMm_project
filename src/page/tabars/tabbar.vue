@@ -8,10 +8,6 @@
             <img slot="icon" slot-scope="props" :src="props.active ? item.active : item.inactive" />
           </TabbarItem>
         </template>
-
-        <!-- <TabbarItem replace to="/search" icon="search">分类</TabbarItem>
-      <TabbarItem replace to="/search" icon="search">购物车</TabbarItem>
-        <TabbarItem replace to="/search" icon="search">我的</TabbarItem>-->
       </Tabbar>
     </div>
   </div>
@@ -35,19 +31,19 @@ export default {
         },
         {
           text: "分类",
-          url: "/H",
+          url: "/nav",
           active: require("../../assets/tabbar_Img/shop-i.png"),
           inactive: require("../../assets/tabbar_Img/nav_item.png")
         },
         {
           text: "购物车",
-          url: "/f",
+          url: "/shop",
           active: require("../../assets/tabbar_Img/shop_i.png"),
           inactive: require("../../assets/tabbar_Img/shop.png")
         },
         {
           text: "我的",
-          url: "/d",
+          url: "/user",
           active: require("../../assets/tabbar_Img/usInfo-i.png"),
           inactive: require("../../assets/tabbar_Img/usInfo.png")
         }

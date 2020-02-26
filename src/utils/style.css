@@ -4,7 +4,9 @@
 /**
   ，颜色
 */
-
+.col-fff{
+    color: #fff;
+}
 .col-999 {
     color: #999;
 }
@@ -31,6 +33,9 @@
 }
 .magl_11{
     margin-left:11px ;
+}
+.mag-bottom{
+    margin-bottom: 30px;
 }
 
 /* 内边距 */
@@ -59,8 +64,17 @@
     font-size: 28px;
     font-weight: bold;
 }
+.fs-31b{
+    font-size: 31px;
+    font-weight: bold;
+
+}
 .fs-32{
     font-size: 32px;
+}
+.fs-32b{
+    font-size: 32px;
+    font-weight: bold;
 }
 .fs-36b{
     font-size: 36px;

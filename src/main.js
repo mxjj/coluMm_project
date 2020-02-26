@@ -5,6 +5,9 @@ import router from '@/router/router'
 import './utils/base.css'
 import './utils/style.css'
 
+import { Icon } from 'vant';
+Vue.use(Icon);
+
 import { Lazyload } from 'vant';
 Vue.use(Lazyload, {
   lazyComponent: true
