@@ -1,9 +1,11 @@
 
+const IS_PROD = ['production'].includes(process.env.NODE_ENV) // 是否是生产环境
 
-console.log(process.env.VUE_APP_URL)
+console.log(IS_PROD,process.env.VUE_APP_URL)
 module.exports = {
     // eslint保存检查
     lintOnSave: true,
+
     devServer: {
         // 端口名
         // port: 8080,
@@ -11,14 +13,14 @@ module.exports = {
         open: true,
         // 代理地址
         proxy: {
-            'api': {
+            '/api': {
                 // 代理地址
-                target:process.env.VUE_APP_URL,
+                target: process.env.VUE_APP_URL,
                 // 自动打开浏览器
-                changeOrigin:true,
+                changeOrigin: true,
                 // 重写地址
-                pathRewrite:{
-                    '^/api':""
+                pathRewrite: {
+                    '^/api': ""
                 }
             }
         }

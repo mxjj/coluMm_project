@@ -1,5 +1,7 @@
 
-
+.bg-fff{
+    background-color: #fff;
+}
 
 /**
   ，颜色
@@ -33,6 +35,9 @@
 }
 .magl_11{
     margin-left:11px ;
+}
+.mgb_20{
+    margin-bottom: 20px;
 }
 .mag-bottom{
     margin-bottom: 30px;

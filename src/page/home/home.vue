@@ -1,7 +1,7 @@
 <template>
   <div class="mbox">
     <div class="header_big">
-      <div class="header">
+      <div class="header" :class="Scrollflag ? 'ding_bu':''">
         <div class="header_city"></div>
         <div class="header_search">
           <Icon name="search" class="col-bbb" />
@@ -102,6 +102,7 @@ export default {
   },
   data() {
     return {
+      Scrollflag: false,
       images: [
         "https://img.yzcdn.cn/vant/apple-1.jpg",
         "https://img.yzcdn.cn/vant/apple-2.jpg"
@@ -133,13 +134,34 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    console.log(window.addEventListener("scroll", this.addScroll));
+  },
+  methods: {
+    addScroll() {
+      let scorllTop = document.documentElement.scrollTop;
+      if (scorllTop > 42) {
+        this.Scrollflag = true;
+      } else {
+        this.Scrollflag = false;
+      }
+    }
   }
 };
 </script>
 <style lang="scss" scope>
 .mbox {
   .header_big {
+    .ding_bu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9;
+      background-color: #fff;
+    }
     .header {
+      padding: 10px 0;
       margin-bottom: 12px;
       .header_search {
         margin: 0 auto;
