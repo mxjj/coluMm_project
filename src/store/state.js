@@ -1,6 +1,7 @@
 
 
-const index = {
-    userInfo: ''
+const state = {
+    userInfo: '',
+    model:""
 }
-export default index
+export default state

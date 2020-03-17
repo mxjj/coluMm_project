@@ -68,6 +68,7 @@ export default {
       };
       localStorage.setItem("userInfo", JSON.stringify(userInfo));
       localStorage.setItem("token", 123456);
+      this.$store.commit('change_UserInfo',userInfo)
       this.$router.push("/home");
       Toast.success('登录成功');
     }

@@ -20,6 +20,7 @@ const index = [
         component: () => import('@/page/nav/nav.vue'),
         meta: {
             isShow: true,
+            isLogin: true
         }
     },
     {
@@ -28,6 +29,7 @@ const index = [
         component: () => import('@/page/shop/shop.vue'),
         meta: {
             isShow: true,
+            isLogin: true
         }
     },
     {
@@ -36,6 +38,7 @@ const index = [
         component: () => import('@/page/user/usInfo.vue'),
         meta: {
             isShow: true,
+            isLogin: true
         }
     },
 

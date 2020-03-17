@@ -4,7 +4,7 @@ import './utils/rem.js'
 import router from '@/router/router'
 import './utils/base.css'
 import './utils/style.css'
-import store from './store/store'
+import store from './store/store.js'
 
 import { Icon } from 'vant';
 Vue.use(Icon);

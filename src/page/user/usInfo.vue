@@ -8,8 +8,8 @@
           <img src alt />
         </div>
         <div class="us_header_nav">
-          <div class="us_header_name fs-31b col-fff">我是一只小松鼠</div>
-          <div class="us_header_model fs-24 col-fff">绑定手机号</div>
+          <div class="us_header_name fs-31b col-fff">{{this.userInfo}}</div>
+          <div class="us_header_model fs-24 col-fff">{{this.model ? this.model :'绑定手机'}}</div>
         </div>
       </div>
     </div>
@@ -53,12 +53,11 @@
   </div>
 </template>
 <script>
-// import { mapState } from "vuex";
+import { mapState } from "vuex";
 // import { mapMutations } from "vuex";
 export default {
   computed: {
-    // ...mapState["userInfo"],
-    // ...mapMutations[""]
+    ...mapState(["userInfo", "model"])
   },
   filters: {
     item_pay(v) {
@@ -106,7 +105,7 @@ export default {
     };
   },
   mounted() {
-    console.log(this.userInfo)
+    console.log(this.userInfo);
   }
 };
 </script>
@@ -144,7 +143,6 @@ export default {
         }
         .us_header_model {
           height: 40px;
-          width: 160px;
           line-height: 40px;
           text-align: center;
           letter-spacing: 1px;
